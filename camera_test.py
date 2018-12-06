@@ -1,21 +1,8 @@
 from picamera import PiCamera
-from RPi import GPIO
-import time
 
 camera = PiCamera()
 
-button = 21
+pic_path = "tmp/img.png"
+camera.capture(pic_path, format="png")
 
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(button, GPIO.IN)
-
-try:
-    while True:
-        if GPIO.input(button) == 0:
-            print "Button pressed!"
-        time.sleep(0.5)
-except KeyboardInterrupt:
-    pass
-
-GPIO.cleanup()
-
+camera.close()
