@@ -33,12 +33,22 @@ Code in this folder was used to allow the pi to stream live video to another mac
 
 SOURCE: https://blog.miguelgrinberg.com/post/how-to-build-and-run-mjpg-streamer-on-the-raspberry-pi
 
-This information was included into our python program using "subprocess.call", but it's always good to remember exactly how the stream itself works. 
 
-NOTE: Make sure that "Web.py" is stored in the same directory as the below python files being run!!
+----------- Steps to start stream with custom GUI --------------
+
+1. Open terminal
+
+2. Navigate to desktop by running the command: cd ~/Desktop
+
+3. Run the python file 'PiStream.py' by running the command: python PiStream.py
+
+4. Start a browser and navigate to the Pi's IP address: http://IP_ADDRESS:5005      <---where IP_ADDRESS should be a sequence of numbers separated by periods
+
+5. Clean up by going back to the terminal and running the command: Ctrl-c
+This stops the program and cleans up everything running in the background. 
 
 
--------------- STEPS --------------
+----------- Steps to start stream without custom GUI --------------
 
 1. Open Terminal and enter: raspistill --nopreview -w 640 -h 480 -q 5 -o /tmp/stream/pic.jpg -tl 100 -t 9999999 -th 0:0:0
 
