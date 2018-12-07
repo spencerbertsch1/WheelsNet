@@ -65,8 +65,3 @@ except:
 # the program is finished, we put things back in their original state
 print ("> finishing")
 web.server_stop()
-
-
-
-
-

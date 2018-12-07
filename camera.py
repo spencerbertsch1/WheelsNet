@@ -1,5 +1,3 @@
-from picamera import PiCamera
-
 from google.oauth2 import service_account
 from google.cloud import vision
 from google.cloud.vision import types
@@ -8,21 +6,6 @@ import time
 
 from lcd import LCD
 display = LCD()
-
-class Camera:
-    def __init__(self):
-        self.camera = PiCamera()
-        self.pic_path = "tmp/img.png" 
-
-    def snap_photo(self):
-        self.camera.capture(self.pic_path, format="png")
-
-    def __del__(self):
-        self.camera.close()
-
-cam = Camera()
-cam.snap_photo()
-
 creds = service_account.Credentials.from_service_account_file('./.google-cloud-creds.json')
 client = vision.ImageAnnotatorClient(credentials=creds)
 

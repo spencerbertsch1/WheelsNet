@@ -7,6 +7,7 @@ class LCD:
         self.default_message()
 
     def default_message(self):
+        self.clear()
         self.display_message("Hello!")
         self.display_message("I'm WheelsNet", row=1)
 
