@@ -48,5 +48,8 @@ NOTE: Make sure that "Web.py" is stored in the same directory as the below pytho
 
 4. Kill the stream by opening a new terminal and entering: pkill raspistill
 
+# Google Credentials
+Go to cloud.google.com/vision/docs/quickstart-client-libraries and follow the instructions to get credentials for the API. Place the credentials in the root directory of this repo with the title `.google-cloud-creds.json`.
+
 # To Run:
 `$ python main.py`
