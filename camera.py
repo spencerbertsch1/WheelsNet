@@ -4,6 +4,10 @@ from google.oauth2 import service_account
 from google.cloud import vision
 from google.cloud.vision import types
 import io
+import time
+
+from lcd import LCD
+display = LCD()
 
 class Camera:
     def __init__(self):
@@ -30,6 +34,8 @@ image = types.Image(content = content)
 response = client.label_detection(image=image)
 labels = response.label_annotations
 
-print "Labels:"
 for label in labels:
-    print label.description + " (" + str(label.score) + "%)"
+    display.clear()
+    display.display_message(label.description, row=0)
+    display.display_message(" (" + str(round(label.score * 100)) + "%)", row=1)
+    time.sleep(2)
