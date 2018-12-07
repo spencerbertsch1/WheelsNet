@@ -1,5 +1,7 @@
 SOURCE: https://blog.miguelgrinberg.com/post/how-to-build-and-run-mjpg-streamer-on-the-raspberry-pi
 
+This information was included into our python program using "subprocess.call", but it's always good to remember exactly how the stream itself works. 
+
 NOTE: Make sure that "Web.py" is stored in the same directory as the below python files being run!!
 
 
