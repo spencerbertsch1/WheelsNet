@@ -1,2 +1,3 @@
 tmp/*
 .google-cloud-creds.json
+*.pyc
