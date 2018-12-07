@@ -6,7 +6,7 @@ A fun image recognition robot on wheels!
 
 In this project, we used a Raspberry Pi 3 as a local server to stream live video from a small, mounted camera. <br>
 
-The pi and camera were mounted onto a remote control truck chasis and was then piloted, streaming back live feed of the truck's view to a computer. <br>
+The pi and camera were mounted onto a remote control truck chasis, streaming back live feed of the truck's view to a computer. <br>
 
 Live video could then be viewed through a custom web interface and still images could be captured through a GUI. <br>
 
