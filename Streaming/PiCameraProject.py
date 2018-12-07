@@ -1,7 +1,5 @@
-# Spencer Bertsch
 # Dartmouth College, Winter 2019
 # Raspberry Pi IOT Short Course
-# Pi Camera Project
 #
 
 # --------------------------- IMPORTS --------------------------- #
