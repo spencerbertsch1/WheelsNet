@@ -47,3 +47,6 @@ NOTE: Make sure that "Web.py" is stored in the same directory as the below pytho
 3. Watch the stream from another computer in your network by using -  http://<IP-address>:8080
 
 4. Kill the stream by opening a new terminal and entering: pkill raspistill
+
+# To Run:
+`$ python main.py`
