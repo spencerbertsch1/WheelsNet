@@ -54,7 +54,7 @@ This stops the program and cleans up everything running in the background.
 
 2. Open a new window in the terminal and enter: LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /tmp/stream -n pic.jpg" -o "output_http.so -w /usr/local/www"
 
-3. Watch the stream from another computer in your network by using -  http://<IP-address>:8080
+3. Watch the stream from another computer in your network by using -  http://IP ADDRESS:8080
 
 4. Kill the stream by opening a new terminal and entering: pkill raspistill
 
